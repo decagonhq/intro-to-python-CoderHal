@@ -1,9 +1,8 @@
-def divide(a, b, floor = True):
+def divide(number1, number2, floor = True):
     try:
         if floor == True:
-            return round(a/b)
+            return round(number1/number2)
         else:
-            return a/b
+            return number1/number2
     except TypeError:
-      # pass
-        print("Values must be integers")
+        raise TypeError("Values must be integers")
